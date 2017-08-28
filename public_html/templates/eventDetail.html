@@ -1,0 +1,34 @@
+ <section class="eventDetailpage">
+    
+        <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <div class="row">
+                <div class="col-md-5">
+                 <ul class="timeline">
+                     <li ng-repeat="item in event" ng-class-odd="'timeline'" ng-class-even="'timeline-inverted'" ng-hide="reload" class="asdf">
+                            <a ng-click="setActive(item)" ng-class="{active : activeMenu === item}" class="timeline-badge blue" ng-href="#!eventDetail/{{ event.indexOf(item) }}" ><i class="glyphicon glyphicon-list-alt"></i></a>
+                            <div class="timeline-panel" id="saravillo" >
+                              <div class="timeline-heading">
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>{{ item.timestamp }}</small></p><!--bg-blue-->
+                                <h4 class="timeline-title" id="sam">{{ item.details }}</h4>
+                              </div>
+                              <div class="timeline-body">
+                                <p>Event Description</p>
+                              </div>
+                            </div>
+                     </li>
+                     
+                 </ul>
+                </div>
+                <div class="col-md-7" ng-model="event">
+                    
+                    <h3>{{ event[whichItem].details }} <a href="#!"><button type="button" class="btn btn-default navbar-btn navbar-right blue-button"><i class="glyphicon glyphicon-menu-left gold"></i>Back to Grid View</button><a/></h3>
+                    <iframe class="custom-iframe" src="form.html"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</section>
+
+   

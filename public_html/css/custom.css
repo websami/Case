@@ -1,0 +1,277 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : Samsaravillo
+*/
+
+body { 
+    color: #5c5c5c;
+    font-size: 1.7rem;
+    line-height: 120%;
+}
+
+.slogo { 
+  padding: 15px 0px 0px 20px;
+  text-align: center;
+}
+
+.topbanner { text-align: center; }
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.left-addon .glyphicon  { left:  0px;}
+.left-addon input  { padding-left:  35px; }
+.form-control {  
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 4.4rem;
+    box-shadow: none;
+    font-size: 2rem;
+    padding-right: 10rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+}
+
+.search-align { padding: 20px 0px 0px 0px; }
+
+.main { padding: 20px; }
+
+.icon-arrow-down { 
+    float:right;
+}
+
+.active {
+  background-color: #ef8400 !important;
+  color:#0c7d34;
+}
+
+
+.box {
+    border:1px solid #75787b;
+    padding:10px;
+    min-height: 205px;
+}
+
+.h3, h3 { 
+    font-size: 20px; color:#1a1f71;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    padding: 10px 0px 10px 0px;
+}
+
+.border-bottom { border-bottom: 1px solid #5c5c5c; }
+
+.panel-default>.panel-heading { 
+    color: #ffffff;
+    background-color: #1a1f71;
+    border-color: #1a1f71;
+}
+
+.blue { 
+    background-color: #1a1f71; 
+    color:#ffffff;
+}
+
+.gold { color: #f7b600; }
+
+.btn { 
+    padding:12px; 
+    border-radius: 1px;
+}
+
+.blue-button { 
+    background-color: #1a1f71 !important; 
+    color:#ffffff; 
+    border:1px solid #1a1f71;
+    
+}
+
+.blue-button:hover { 
+    background-color: #0065ea !important; 
+    color:#ffffff; 
+    border:1px solid #0065ea;
+}
+
+.bg-blue { 
+    background-color:#0065ea; 
+    color:#ffffff;
+}
+
+.bg-green { 
+    background-color:#0c7d34; 
+    color:#ffffff;
+}
+
+.bg-orange { 
+    background-color:#ef8400; 
+    color:#ffffff;
+}
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th  { border:1px solid #75787b; }
+.name { padding:10px 0px 0px 0px; font-weight: bold;}
+
+.navbar-right { margin-right:0px; }
+
+.asdf a:ng-click-active {
+  color: red;
+}
+
+
+/*.custom-table { 
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+} */
+
+.custom-iframe { width: 100%; height: 500px; border: 1px solid #75787b; padding:20px; }
+
+/* timeline */
+.timeline {
+  list-style: none;
+  padding: 0px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 50%;
+  float: left;
+  border-radius: 2px;
+  padding: 30px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.175);
+}
+.timeline > li.timeline-inverted + li:not(.timeline-inverted),
+.timeline > li:not(.timeline-inverted) + li.timeline-inverted {
+margin-top: -60px;
+}
+
+.timeline > li:not(.timeline-inverted) {
+padding-right:90px;
+}
+
+.timeline > li.timeline-inverted {
+padding-left:90px;
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #1a1f71;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}

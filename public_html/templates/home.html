@@ -1,0 +1,54 @@
+<section class="homepage">
+
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="box">
+                                    <h3 class="border-bottom">Issuer Details</h3>
+                                    <p class="name">John Doe</p>
+                                    <p>Blk 2D Upper Boon Keng Road<br />#21-664 Singapore<br />384002</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="box">
+                                    <h3 class="border-bottom">Cardholder Details</h3>
+                                    <p class="name">Chris Evans</p>
+                                    <p>XXXX-XXXX-XXXX-1234</p>
+                                     <p>Blk 2D Upper Boon Keng Road<br />#21-664 Singapore<br />384002</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="box">
+                                    <h3 class="border-bottom">Merchant Details</h3>
+                                    <p class="name">Sam Smith</p>
+                                    <p>Blk 2D Upper Boon Keng Road<br />#21-664 Singapore<br />384002</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="box">
+                                    <h3 class="border-bottom">Acquirer Details</h3>
+                                    <p class="name">Maria Cruz</p>
+                                    <p>Blk 2D Upper Boon Keng Road<br />#21-664 Singapore<br />384002</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-12 custom-table">
+                            <table class="table table-bordered table-striped">
+                                
+                                <tr ng-repeat="item in event">
+                                    <td>{{ item.timestamp }}</td>
+                                    <td>{{ item.details }}</td>
+                                     <!--<td><a href="#!eventDetail">asdf</a></td>-->
+                                    <td><a href="#!eventDetail/{{ event.indexOf(item) }}">Find out more <i class="glyphicon glyphicon-menu-right gold"></i></a></td>
+                                </tr>
+                               </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+    
+</section>
